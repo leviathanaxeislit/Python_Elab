@@ -18,5 +18,15 @@ n = int(input()) # get input from user
 for i in range(n, 0, -1):
     # print the appropriate number of stars for this row
     for j in range(i):
+        print("*", end="")
+    print() # move to the next line
+
+
+n = int(input()) # get input from user
+
+# iterate over each row
+for i in range(n):
+    # print the appropriate number of stars for this row
+    for j in range(i+1):
         print("* ", end="")
     print() # move to the next line
